@@ -1,0 +1,109 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.main{
+    background-color:#f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.parent{
+    padding:15px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    /* border: 2px solid salmon */
+}
+.img-sec{
+    margin:9px;
+    display: flex;
+    align-items: center;
+    /* border:2px solid red; */
+}
+.img-sec img{
+    height: 160px;
+    width:160px;
+}
+.img-sec h2{
+    color: rgb(69 2 199);
+    letter-spacing: 0.6px;
+    font-size: 2em;
+}
+.slogan{
+    margin-left: 9px;
+}
+.slogan p{
+    text-align: center;
+    font-size: 1.7em;
+    padding-left: 0;
+    font-family: 'Lato',sans-serif;
+    /* font-weight: 300; */
+}
+.form-con{
+    background-color: #ffffff;
+    box-shadow:0 2px 4px rgba(0 ,0 ,0,10%), 0 8px 16px rgba(0 ,0, 0, 10%);
+    margin: 40px 0 0;
+    font-family: 'Lato', s￼ans-serif;
+    /* border: 1.2px solid red; */
+    border-radius: 5px;
+}
+.parent{
+    padding:0px 8px;
+}
+.parent input::placeholder{
+    color: rgb(141, 137, 145);
+    font-size: 16px;
+}
+.inp{
+    height: 3em;
+    width:400px;
+    margin:6px 0px;
+    padding :0px 10px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    border-radius: 5px;
+    border: 1px solid rgb(141, 137, 145);
+}
+
+#user{
+    margin-top:11px;
+}
+#login{
+    background-color:  rgb(69 2 199);
+    color:#ffffff;
+}
+#login:hover{
+    background-color: rgb(122, 72, 221);
+    cursor: pointer;
+}
+#signin{
+    background-color: rgb(226, 231, 231);
+}
+#signin:hover{
+    cursor: pointer;
+    background-color: rgb(141, 137, 145);
+}
+.fc:focus{
+    outline-color: rgb(122,72,221);
+}
+@media (max-width:973px) {
+    .main{
+        /* background-color: black; */
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .form-con{
+        margin-bottom: 0px;
+    }
+}
